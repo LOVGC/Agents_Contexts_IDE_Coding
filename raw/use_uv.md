@@ -4,7 +4,7 @@ Must use `uv` for managing the Python project.
 
 * Use `uv` to manage dependencies
 * Must Use `uv run` to execute Python code
-* Use `uv add/remove` to add/remove dependencies 
+* Use `uv add/remove` to add/remove dependencies
 
 ## Common `uv` commands
 The followings are some examples for using uv:
@@ -32,6 +32,3 @@ ALL commands MUST be executed from the project root directory
 
 Running `uv run ...` outside the project root is NOT allowed,
 as it may resolve to a different environment.
-
-
-

@@ -1,31 +1,16 @@
----
-title: Index
-type: concept
-sources: []
-related:
-  - wiki/concepts/overview.md
-  - wiki/log.md
-created: 2026-04-07
-updated: 2026-04-07
-confidence: high
----
-
 # Index
 
-This is the master catalog for the wiki. Read this file first to see what exists and where to go next.
+Read this file first. It is the main catalog for the collected-item wiki.
 
-## Concepts
+## Contexts
+- No context files ingested yet.
 
-- [[concepts/overview]]: Current top-level picture of the topic and what is still unclear.
+## Prompts
+- [[raw/summary_prompts.md]]: Chapter-summary prompt that asks for key points, support, relationships, and final takeaways.
 
-## Entities
+## VS Code / Debugger
+- [[raw/launch.json]]: VS Code Python debugger configurations for current file, module or test debugging, and scripts that need CLI args and env vars. Note: [[wiki/items/vscode-python-debugger]]
 
-- No entity pages yet.
-
-## Source Summaries
-
-- No source summary pages yet.
-
-## Comparisons
-
-- No comparison pages yet.
+## Project Setup
+- [[raw/use_uv.md]]: Project environment rule that standardizes Python work on `uv`, `uv add`, and `uv run`.
+- [[raw/uv_pytomal.toml]]: Example `uv` project configuration that shows dependencies, a CUDA PyTorch index, and a dev dependency group.

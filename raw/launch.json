@@ -10,11 +10,11 @@
             "console": "integratedTerminal"
         },
 
-        {   // this is for how to debeg a module 
+        {   // this is for how to debeg a module
             "name": "Debug tests modules",
             "type": "debugpy",
             "request": "launch",
-            "module": "tests.test_rx_baseband",   
+            "module": "tests.test_rx_baseband",
             "justMyCode": true,
             "console": "integratedTerminal"
         },
@@ -31,9 +31,9 @@
             "args": [
                 "--task_name", "long_term_forecast",
                 "--is_training", "1",
-                "--root_path", "./dataset/ETT-small/",
+                "--root_path", "./dataset/ETT-small/"
             ]
-        },
+        }
 
     ]
 }
