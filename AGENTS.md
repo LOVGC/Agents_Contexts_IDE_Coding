@@ -1,52 +1,46 @@
 # LLM Wiki Schema
 
 ## Project Structure
-- `raw/` - immutable source documents. NEVER modify.
-- `wiki/index.md` - the single knowledge index. Keep a summary of each ingested file here.
-- `wiki/log.md` - append-only ingest activity log.
-- Legacy folders such as `wiki/sources/`, `wiki/concepts/`, `wiki/entities/`, and comparison pages are not part of the active workflow. Do not create or update them unless I explicitly ask.
+- `raw/` — immutable source documents. NEVER modify.
+- `wiki/` — LLM-generated wiki. You own this entirely.
+- `wiki/index.md` — master catalog. Update on every ingest.
+- `wiki/log.md` — append-only activity log.
 
-## `wiki/index.md` Format
-For each ingested file, maintain one section in `wiki/index.md` using this template:
-
-```md
-### raw/<filename>
-Ingested: YYYY-MM-DD
-
-Summary:
-A short paragraph summarizing the file.
-
-Key Takeaways:
-- Point 1
-- Point 2
-- Point 3
+## Page Conventions
+Every wiki page MUST have YAML frontmatter:
 ```
-
-- Keep exactly one section per ingested source file.
-- If a file is re-ingested, update the existing section instead of adding a duplicate.
-- No separate concept, entity, source-summary, or comparison pages are required.
-- YAML frontmatter is not required for these per-file summary entries.
+---
+title: Page Title
+type: concept | entity | source-summary | comparison
+sources: [list of raw/ files referenced]
+related: [list of wiki pages linked]
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+confidence: high | medium | low
+---
+```
 
 ## Ingest Workflow
 When I say "ingest [filename]":
-1. Read the source file in `raw/`
+1. Read the source file in raw/
 2. Discuss key takeaways with me
-3. Add or update that file's section in `wiki/index.md`
-4. Append an entry to `wiki/log.md`
-5. Do not create or update separate summary, concept, entity, or comparison pages unless I explicitly ask
+3. Create/update a summary page in wiki/sources/
+4. Update wiki/index.md
+5. Update all relevant concept and entity pages
+6. Append an entry to wiki/log.md
 
 ## Query Workflow
 When I ask a question:
-1. Read `wiki/index.md` to find relevant file summaries
-2. Answer from those summaries first
-3. If the summaries are insufficient, read the relevant files in `raw/` and incorporate that information
-4. Cite the relevant `wiki/index.md` section and source file paths plainly; `[[wiki-link]]` citations are not required
-5. If the answer is worth saving, offer to update the relevant summary in `wiki/index.md`
+1. Read wiki/index.md to find relevant pages
+2. Read those pages
+3. Synthesize an answer with [[wiki-link]] citations
+4. If the answer is valuable, offer to file it as
+   a new wiki page
 
 ## Lint Workflow
 When I say "lint":
-1. Check whether files that have been ingested are missing sections in `wiki/index.md`
-2. Check for duplicate file sections in `wiki/index.md`
-3. Check whether summaries are stale or inconsistent with the corresponding files in `raw/`
-4. Check whether `wiki/log.md` and `wiki/index.md` are broadly consistent about what has been ingested
-5. Suggest useful next ingest or cleanup tasks
+1. Check for contradictions between pages
+2. Find orphan pages with no inbound links
+3. List concepts mentioned but lacking own page
+4. Check for stale claims superseded by newer sources
+5. Suggest questions to investigate next
