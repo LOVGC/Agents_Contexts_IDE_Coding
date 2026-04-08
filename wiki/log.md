@@ -17,3 +17,7 @@ Created [[wiki/items/llm-wiki-bootstrap-template]] and filed [[raw/llm_wiki.md]]
 ## [2026-04-08] ingest | llm_wiki_stem_cell.md
 
 Created [[wiki/items/llm-wiki-developmental-system]] and filed [[raw/llm_wiki_stem_cell.md]] under `Prompts` in [[wiki/index]].
+
+## [2026-04-08] ingest | LLM wiki for research team.md
+
+Created [[wiki/items/llm-wiki-research-team]] and filed [[raw/LLM wiki for research team.md]] under `Prompts` in [[wiki/index]].

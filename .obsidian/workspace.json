@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/index.md",
+                "file": "raw/LLM wiki for research team.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "LLM wiki for research team"
             }
           }
         ]
@@ -185,12 +185,14 @@
   },
   "active": "9199baa2240d28be",
   "lastOpenFiles": [
-    "wiki/items/llm-wiki-bootstrap-template.md",
     "wiki/index.md",
-    "wiki/log.md",
-    "raw/llm_wiki_stem_cell.md",
-    "raw/llm_wiki.md",
     "AGENTS.md",
+    "wiki/log.md",
+    "wiki/items/llm-wiki-research-team.md",
+    "raw/LLM wiki for research team.md",
+    "raw/llm_wiki.md",
+    "wiki/items/llm-wiki-bootstrap-template.md",
+    "raw/llm_wiki_stem_cell.md",
     "raw/summary_prompts.md"
   ]
 }
