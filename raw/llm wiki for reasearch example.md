@@ -1,5 +1,6 @@
+
 Here is an idea file from Karpathy about building
-an LLM Wiki. I want to build one for [machine learning   research / competitive analysis / book notes / etc.].
+an LLM Wiki. I want to build one for research focusing on deep learning based method for radar target recognition.
 
 idea file:
  [# LLM Wiki
@@ -79,4 +80,8 @@ The idea is related in spirit to Vannevar Bush's Memex (1945) — a personal, cu
 This document is intentionally abstract. It describes the idea, not a specific implementation. The exact directory structure, the schema conventions, the page formats, the tooling — all of that will depend on your domain, your preferences, and your LLM of choice. Everything mentioned above is optional and modular — pick what's useful, ignore what isn't. For example: your sources might be text-only, so you don't need image handling at all. Your wiki might be small enough that the index file is all you need, no search engine required. You might not care about slide decks and just want markdown pages. You might want a completely different set of output formats. The right way to use this is to share it with your LLM agent and work together to instantiate a version that fits your needs. The document's only job is to communicate the pattern. Your LLM can figure out the rest.]
 
 Please set up the directory structure, create the schema file (AGENTS.md), and walk me
-through ingesting my first source document. 
+through ingesting my first source document. The initial directory structure can be as simple as possible, the idea is that as long as the structure can satisfy my needs it is OK. My needs for a research project is that: I need a wiki page that summarizes the overview of the project: 1. Real world problem: what the real world problem the project is trying to solve. 2. Research Questions: what are the research questions? 3. Problem Formulation 4. Baseline methods 5. Proposed Mehtod. 6. Experiment Design: what experiments you are going to do to verify your proposed method. As my knowledge grows and my practical experience (test the method on real world data) grows, I may require the LLM agent to update the overview of the project (reflecting my updated knowledge of the project).
+
+I also need a wiki page record my ongoing development log: a diary that records what I did each day and what needs to be done next. I will ingest notes I have written before, papers I think useful for the project, codebase that I think useful. The index.md should contain all the things I ingest with a concise summary, also the index.md should be well organized(categorized). 
+
+In general, this wiki serve as a recording of my own thinking about the research project. Thus when I ingest anything, before doing any update on the wiki knowledge base, the LLM agent should first read and understand the things to be ingested, then the LLM agent should discuss with me on what needs to be emphasized, after the discussion, then do the updates on the wiki knowledge base. Also, when do the lint procedure, the LLM agent should do the similar thing, i.e. discuss with me, then do the updates.

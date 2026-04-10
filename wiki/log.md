@@ -21,3 +21,7 @@ Created [[wiki/items/llm-wiki-developmental-system]] and filed [[raw/llm_wiki_st
 ## [2026-04-08] ingest | LLM wiki for research team.md
 
 Created [[wiki/items/llm-wiki-research-team]] and filed [[raw/LLM wiki for research team.md]] under `Prompts` in [[wiki/index]].
+
+## [2026-04-10] ingest | llm wiki for reasearch example.md
+
+Created [[wiki/items/llm-wiki-research-example]] and filed [[raw/llm wiki for reasearch example.md]] under `Prompts` in [[wiki/index]].
