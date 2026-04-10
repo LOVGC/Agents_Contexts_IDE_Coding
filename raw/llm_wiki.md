@@ -78,6 +78,5 @@ The idea is related in spirit to Vannevar Bush's Memex (1945) — a personal, cu
 
 This document is intentionally abstract. It describes the idea, not a specific implementation. The exact directory structure, the schema conventions, the page formats, the tooling — all of that will depend on your domain, your preferences, and your LLM of choice. Everything mentioned above is optional and modular — pick what's useful, ignore what isn't. For example: your sources might be text-only, so you don't need image handling at all. Your wiki might be small enough that the index file is all you need, no search engine required. You might not care about slide decks and just want markdown pages. You might want a completely different set of output formats. The right way to use this is to share it with your LLM agent and work together to instantiate a version that fits your needs. The document's only job is to communicate the pattern. Your LLM can figure out the rest.]
 
-Please set up the directory structure, create the
-schema file (AGENTS.md), and walk me
-through ingesting my first source document. I don't need complicated directory structure, because this database can be a categorized list of items I have collected. The index.md page can be something like <a link to the raw source(obsidian style)> : <a description of what this source do>, example [[path_to_launch-json]]: this file is for configuring vscode python debugger.  
+Please set up the directory structure, create the schema file (AGENTS.md), and walk me
+through ingesting my first source document. 
