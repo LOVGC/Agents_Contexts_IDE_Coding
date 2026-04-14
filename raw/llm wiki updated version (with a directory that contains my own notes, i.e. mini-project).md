@@ -1,4 +1,5 @@
 
+
 Here is an idea file from Karpathy about building
 an LLM Wiki. I want to build one for research focusing on < XXXX >.
 
@@ -82,8 +83,31 @@ This document is intentionally abstract. It describes the idea, not a specific i
 Please set up the directory structure, create the schema file (AGENTS.md), and walk me
 through ingesting my first source document. 
 
+
+change the following according to your own needs:
 < The initial directory structure can be as simple as possible, the idea is that as long as the structure can satisfy my needs it is OK. My needs for a research project is that: I need a wiki page that summarizes the overview of the project: 1. Real world problem: what the real world problem the project is trying to solve. 2. Research Questions: what are the research questions? 3. Problem Formulation 4. Baseline methods 5. Proposed Mehtod. 6. Experiment Design: what experiments you are going to do to verify your proposed method. As my knowledge grows and my practical experience (test the method on real world data) grows, I may require the LLM agent to update the overview of the project (reflecting my updated knowledge of the project).
 
 I also need a wiki page record my ongoing development log: a diary that records what I did each day and what needs to be done next. I will ingest notes I have written before, papers I think useful for the project, codebase that I think useful. The index.md should contain all the things I ingest with a concise summary, also the index.md should be well organized(categorized). 
 
-In general, this wiki serve as a recording of my own thinking about the research project. Thus when I ingest anything, before doing any update on the wiki knowledge base, the LLM agent should first read and understand the things to be ingested, then the LLM agent should discuss with me on what needs to be emphasized, after the discussion, then do the updates on the wiki knowledge base. Also, when do the lint procedure, the LLM agent should do the similar thing, i.e. discuss with me, then do the updates. >
+In general, this wiki serve as a recording of my own thinking about the research project. Thus when I ingest anything, before doing any update on the wiki knowledge base, the LLM agent should first read and understand the things to be ingested, then the LLM agent should discuss with me on what needs to be emphasized, after the discussion, then do the updates on the wiki knowledge base. Also, when do the lint procedure, the LLM agent should do the similar thing, i.e. discuss with me, then do the updates. 
+
+in the /raw folder, there should be a directory called my_own_journal:
+- this folder is for accumulating knowledge and recording project progress by the human user. 
+- the structure of the directory is listed below: 
+├─ 0 knowledge frameworks
+│  └─ 0 guidelines.md
+├─ 1 papers
+│  ├─ 0 guidelines.md
+│  └─ 1 papers summary.md
+├─ 2 learnings
+│  └─ 0 guidelines.md
+├─ 3 writings
+│  ├─ 0 guidelines.md
+│  ├─ 1 研究背景和意义，realworld problem.md
+│  ├─ 2 research problem.md
+│  ├─ 3 相关工作，目前研究的 challenges，Research Gaps.md
+│  ├─ 4 proposed method.md
+│  └─ 5 Limitations, Discussions, Future works.md
+├─ 4 编程
+└─ roadmap (research Journal).md
+- in this directory the user may update the roadmap on a regular basis, the content in the roadmap starts with a date as the header and what the human user finish and his thoughts and what's next on that day. The human user may ask the LLM agent to ingest the content of a day, and after LLM agent ingests the content of the day, it should mark that day as "ingested" after the date header.  >

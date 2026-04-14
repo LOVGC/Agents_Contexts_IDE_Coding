@@ -25,3 +25,23 @@ Created [[wiki/items/llm-wiki-research-team]] and filed [[raw/LLM wiki for resea
 ## [2026-04-10] ingest | llm wiki for reasearch example.md
 
 Created [[wiki/items/llm-wiki-research-example]] and filed [[raw/llm wiki for reasearch example.md]] under `Prompts` in [[wiki/index]].
+
+## [2026-04-13] ingest | summary_prompts.md
+
+Created [[wiki/items/chapter-summary-prompt]] and filed [[raw/summary_prompts.md]] under `Prompts` in [[wiki/index]].
+
+## [2026-04-13] ingest | llm wiki updated version (with a directory that contains my own notes, i.e. mini-project).md
+
+Created [[wiki/items/llm-wiki-research-journal-variant]] and filed [[raw/llm wiki updated version (with a directory that contains my own notes, i.e. mini-project).md]] under `Prompts` in [[wiki/index]].
+
+## [2026-04-13] ingest | use_uv.md
+
+Created [[wiki/items/uv-project-environment-rule]] and filed [[raw/use_uv.md]] under `Project Setup` in [[wiki/index]].
+
+## [2026-04-13] ingest | uv_pytomal.toml
+
+Created [[wiki/items/uv-project-config-example]] and filed [[raw/uv_pytomal.toml]] under `Project Setup` in [[wiki/index]].
+
+## [2026-04-14] ingest | learning unfamiliar topics prompts.md
+
+Created [[wiki/items/learning-unfamiliar-topics-prompt-framework]] and filed [[raw/learning unfamiliar topics prompts.md]] under `Prompts` in [[wiki/index]].
