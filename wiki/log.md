@@ -45,3 +45,7 @@ Created [[wiki/items/uv-project-config-example]] and filed [[raw/uv_pytomal.toml
 ## [2026-04-14] ingest | learning unfamiliar topics prompts.md
 
 Created [[wiki/items/learning-unfamiliar-topics-prompt-framework]] and filed [[raw/learning unfamiliar topics prompts.md]] under `Prompts` in [[wiki/index]].
+
+## [2026-04-14] ingest | llm_wiki_v1.md
+
+Created [[wiki/items/llm-wiki-research-setup-v1]] and filed [[raw/llm_wiki_v1.md]] under `Prompts` in [[wiki/index]].

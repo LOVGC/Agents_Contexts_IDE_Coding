@@ -13,6 +13,7 @@ Read this file first. It is the main catalog for the collected-item wiki.
 - [[raw/LLM wiki for research team.md]]: Prompt example for building a minimal LLM wiki for a research team to track project goals, meeting takeaways, baseline methods, and proposed methods. Note: [[wiki/items/llm-wiki-research-team]]
 - [[raw/llm wiki for reasearch example.md]]: Prompt example for establishing a personal research wiki knowledge base with a discussion-first ingest flow, project overview page, and ongoing development log. Note: [[wiki/items/llm-wiki-research-example]]
 - [[raw/llm wiki updated version (with a directory that contains my own notes, i.e. mini-project).md]]: Prompt variant for building a research wiki with a structured `raw/my_own_journal` area and day-level roadmap ingest tracking. Note: [[wiki/items/llm-wiki-research-journal-variant]]
+- [[raw/llm_wiki_v1.md]]: Research-oriented LLM wiki prompt that adds a project overview page, development log, discussion-first ingest workflow, and a structured `raw/my_own_journal` area. Note: [[wiki/items/llm-wiki-research-setup-v1]]
 
 ## VS Code / Debugger
 - [[raw/launch.json]]: VS Code Python debugger configurations for current file, module or test debugging, and scripts that need CLI args and env vars. Note: [[wiki/items/vscode-python-debugger]]
