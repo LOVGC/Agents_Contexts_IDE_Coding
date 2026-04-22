@@ -96,7 +96,7 @@ The point is that, initially, the directory structure should be simple. My desig
 - wiki
 	-  index.md : content-oriented. It's a catalog of everything in the wiki — each page listed with a link, a one-line summary, and optionally metadata like date or source count. Organized by category (at the beginning there is no categories reflecting the fact that we have no prior on the subject's knowledge). The LLM updates it on every ingest. When answering a query, the LLM reads the index first to find relevant pages, then drills into them.
 	- log.md: is chronological. It's an append-only record of what happened and when — ingests, queries, lint passes. A useful tip: if each entry starts with a consistent prefix (e.g. `## [2026-04-02] ingest | Article Title`), the log becomes parseable with simple unix tools — `grep "^## \[" log.md | tail -5` gives you the last 5 entries. The log gives you a timeline of the wiki's evolution and helps the LLM understand what's been done recently.
-	- knowledge_framework.md (or knowledge_framework.excaldraw): 这个是给人看的，一般应该是简洁易懂，基本上总结了当前的我对这个 subject 的 landscape 的探索和理解（这个 subject 类似一个带迷雾的地图，我在这个地图上不断探索，点亮的部分就是我目前能够理解的部分）。
+	- knowledge_framework.md (or knowledge_framework.excaldraw): 这个是给我自己看的，一般应该是简洁易懂，基本上总结了当前的我对这个 subject 的 landscape 的探索和理解（这个 subject 类似一个带迷雾的地图，我在这个地图上不断探索，点亮的部分就是我目前能够理解的部分）。
 	- source: this directory stores the summaries of each ingested raw data.
 
 
